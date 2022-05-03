@@ -20,7 +20,7 @@ const NavBar = (props) => {
             <div className={"nav " + props.active + " " + props.activeMovile}>
                 <ul>
                     <li><Link to="/" onClick={() => props.cambioBtn()}>Home <i className="fa fa-home click" aria-hidden="true"><span className="tooltip">Home</span></i> </Link> </li>
-                    <li><Link to="/about" onClick={() => props.cambioBtn()}>About Us <i className="fa fa-address-card-o click" aria-hidden="true"><span className="tooltip">About</span></i></Link> </li>
+                    <li><Link to="/about" onClick={() => props.cambioBtn()}>About <i className="fa fa-address-card-o click" aria-hidden="true"><span className="tooltip">About</span></i></Link> </li>
                     <li><Link to="/contact" onClick={() => props.cambioBtn()}>Contact <i class="fa fa-address-book-o click" aria-hidden="true"><span className="tooltip">Contact</span></i></Link></li>
                 </ul>
                 <div className={"footer "+ props.active}>
