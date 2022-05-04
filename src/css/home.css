@@ -78,7 +78,6 @@
     bottom: 50px;
     border-top-right-radius: 30%;
     border-top-left-radius: 30%;
-
 }
 
 .click-menu {
@@ -183,7 +182,21 @@
 }
 
 @media screen and (max-width: 850px) {
-    [class*="col-"] {
-        width: 100%;
+    
+    .barra-menu {
+        
+        bottom: 0px;
     }
+
+    .click-menu .tooltip {
+        width: 210px;
+        height: 100px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 120%;
+        left: -50%;
+        margin-left: -60px;
+    }
+    
 }
