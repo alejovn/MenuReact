@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.fondo-home {
+    background-color: rgb(133, 137, 139);
+    width: 100%;
+    height: 100vh;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.barra-menu {
+    background-color: rgb(85, 100, 189);
+    margin-left: 15%;
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+
+}
+
+.click-menu {
+    transition: all 0.5s ease-out;
+    font-size: 22px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    top: -20px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(172, 182, 224);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 20%;
+}
+
+.click-menu .tooltip {
+    visibility: hidden;
+    overflow: hidden;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(113, 113, 175, 0.4);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: -270%;
+    margin-left: -60px;
+}
+
+.click-menu .tooltip-4 {
+    visibility: hidden;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(113, 113, 175, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: -270%;
+    margin-left: -60px;
+}
+
+.click-menu:hover {
+    transition: all 0.5s ease-out;
+    top: -30px;
+
+}
+
+.click-menu:hover .tooltip {
+    visibility: visible;
+    transition: all 1s ease-in;
+    height: 300px;
+}
+.click-menu:hover .tooltip-4 {
+    visibility: visible;
+    transition: all 1s ease-in;
+    height: 300px;
+    width: 300px;
+}
+
+.btn-menu{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(67, 106, 165);
+}
+.btn-menu-4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(67, 106, 165);
+    border: none;
+    float: right;
+}
+
+.arriba1{
+    margin-top: 0;
+}
+.arriba2{
+    margin-top: 20px;
+}
+.arriba3{
+    margin-top: 0px;
+}
+.arriba4{
+    margin-top: 20px;
+}
+.arriba5{
+    margin-top: 0px;
+}
+.arriba6{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}

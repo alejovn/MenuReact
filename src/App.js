@@ -1,6 +1,7 @@
 import NavBar from './componentes/NavBar'
 import './App.css'
 import '../src/css/menu.css'
+import '../src/css/home.css'
 import Home from './componentes/Home';
 import About from './componentes/About';
 import Contact from './componentes/Contact';
@@ -17,7 +18,6 @@ function App() {
   const [abrir, setAbrir] = useState("");
   const [icon, setIcon] = useState("fa fa-bars");
   const [iconFlecha, setIconFlecha] = useState("fa fa-arrow-left");
-  const [iconFlechaCombo, setIconFlechaCombo] = useState("fa fa-arrow-down");
 
 
   const cambio = () => {
@@ -43,19 +43,16 @@ function App() {
   const combo = () => {
     if (abrir === "") {
       setAbrir("abrir");
-      setIconFlechaCombo("fa fa-arrow-up");
     }
     else {
       setAbrir("");
-      setIconFlechaCombo("fa fa-arrow-down");
     }
   }
 
   return (
     <div>
       <NavBar active={active} activeMovile={activeMovile} cambioBtn={cambioBtn}
-        cambio={cambio} icon={icon} iconFlecha={iconFlecha} combo={combo} abrir={abrir}
-        iconFlechaCombo={iconFlechaCombo}></NavBar>
+        cambio={cambio} icon={icon} iconFlecha={iconFlecha} combo={combo} abrir={abrir}></NavBar>
       <div className={"pagina-completa " + active}>
         <Routes>
           <Route exact path='/' element={< Home />}></Route>
